@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock am See - Festival 2025</title>
+
+    <!-- Google Font: Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Global styles -->
+    <link href="./src/style.css" rel="stylesheet" />
+    <link href="./src/global.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="hero-background">
+      <!-- Navigation -->
+      <nav class="nav">
+        <div class="nav-container">
+          <ul>
+            <li><a class="nav-link" href="index.html">Start</a></li>
+            <li><a class="nav-link" href="lineup.html">Line-Up</a></li>
+            <li>
+              <a class="nav-link active" href="helfer.html">Helfer:innen</a>
+            </li>
+            <li><a class="nav-link" href="impressum.html">Impressum</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <header>
+        <img width="200" src="./src/logo.png" alt="Rock am See Festival-Logo" />
+        <h1>Helfer:innen gesucht!</h1>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <div class="container">
+          <section class="content-box animate-fade-in">
+            <p class="text-lg">
+              Werde Teil unseres Rock am See Teams! Erlebe das Festival aus
+              einer einzigartigen Perspektive, knüpfe neue Kontakte und hilf
+              mit, ein unvergessliches Event zu erschaffen.
+            </p>
+            <h2 class="text-center">Bewirb dich jetzt!</h2>
+            <section class="bewerbung">
+              <!-- Benefits -->
+              <div class="benefit flex items-center">
+                <img
+                  src="./src/calendar.svg"
+                  width="24"
+                  height="24"
+                  alt="Kalender Icon"
+                />
+                <div class="content">
+                  <h3>Festivaldaten</h3>
+                  <p class="text-gray">18. - 20. Juli 2025</p>
+                </div>
+              </div>
+              <div class="benefit flex items-center">
+                <img
+                  src="./src/user.svg"
+                  width="24"
+                  height="24"
+                  alt="Kalender Icon"
+                />
+                <div class="content">
+                  <h3>Deine Vorteile</h3>
+                  <p class="text-gray">
+                    Freier Eintritt, Verpflegung, Team-Shirt, After-Show-Party
+                  </p>
+                </div>
+              </div>
+              <div class="benefit flex items-center">
+                <img
+                  src="./src/info.svg"
+                  width="24"
+                  height="24"
+                  alt="Kalender Icon"
+                />
+                <div class="content">
+                  <h3>Mindestalter</h3>
+                  <p class="text-gray">18 Jahre</p>
+                </div>
+              </div>
+              <!-- Formular -->
+              <form class="form" action="https://dummyjson.com/auth/login" method="POST">
+                <div class="form-group">
+                  <label class="text-sm" for="username">Benutzername</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    required
+                    value="emily"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="text-sm" for="password">Passwort</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    value="emilyspass"
+                  />
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="action-btn">Anmelden</button>
+                </div>
+              </form>
+            </section>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links text-gray flex justify-center">
+          <a class="footer-link" href="/impressum.html">Impressum</a>
+          <a class="footer-link" href="/helfer.html">Helfer:innen</a>
+        </div>
+        <div>
+          <p class="text-gray-600 text-center text-sm">
+            © 2025 Rock am See Festival. Alle Rechte vorbehalten.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
