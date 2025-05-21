@@ -18,9 +18,20 @@
   <body>
     <div class="hero-background">
       <!-- Navigation -->
-      <nav class="nav">
+       <nav class="nav">
         <div class="nav-container">
-          <ul>
+          <!-- Mobile menu toggle (checkbox hack) -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
+          <label
+            for="nav-toggle"
+            class="nav-hamburger"
+            aria-label="Menü öffnen"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </label>
+          <ul id="nav-menu" class="nav-menu">
             <li><a class="nav-link" href="index.html">Start</a></li>
             <li><a class="nav-link active" href="lineup.html">Line-Up</a></li>
             <li><a class="nav-link" href="helfer.html">Helfer:innen</a></li>
@@ -30,7 +41,7 @@
       </nav>
 
       <header>
-        <img width="200" src="./src/logo.png" alt="Rock am See Festival-Logo" />
+        <img width="200" src="./src/logo.png" alt="Rock am See Festival-Logo: Gitarrenmotiv mit See und Sonne" />
         <h1>Line-Up 2025</h1>
       </header>
 
@@ -44,8 +55,7 @@
                 <div class="headliner-image">
                   <img
                     src="./src/headliner.jpg"
-                    alt="Headliner Band Northern Lights"
-                  />
+                    alt="Bandfoto Northern Lights: Die Band steht auf einer großen Festivalbühne im Scheinwerferlicht" />
                 </div>
                 <div class="headliner-text">
                   <h3 class="text-white text-3xl">Northern Lights</h3>
@@ -66,12 +76,12 @@
               <!-- Band 1 -->
               <div class="card shadow">
                 <div class="card-image">
-                  <img src="./src/1.jpg" alt="Band The Lake Echoes" />
+                  <img src="./src/1.jpg" alt="Bandfoto The Lake Echoes: Vierköpfige Band am Seeufer mit Instrumenten" />
                 </div>
                 <div class="card-content">
                   <h3>The Lake Echoes</h3>
                   <div class="card-info">
-                    <img src="./src/calendar.svg" height="16" width="16" />
+                    <img src="./src/calendar.svg" height="16" width="16" alt="Kalender-Icon: Symbol für Auftrittszeit" />
                     <span>Fr. 20:30 • Main Stage</span>
                   </div>
                   <p class="text-gray">
@@ -83,12 +93,12 @@
               <!-- Band 2 -->
               <div class="card shadow">
                 <div class="card-image">
-                  <img src="./src/2.jpg" alt="Band Electric Wave" />
+                  <img src="./src/2.jpg" alt="Bandfoto Electric Wave: Musiker mit Synthesizern und Lichteffekten auf der Bühne" />
                 </div>
                 <div class="card-content">
                   <h3>Electric Wave</h3>
                   <div class="card-info">
-                    <img src="./src/calendar.svg" height="16" width="16" />
+                    <img src="./src/calendar.svg" height="16" width="16" alt="Kalender-Icon: Symbol für Auftrittszeit" />
                     <span>Sa. 22:00 • Main Stage</span>
                   </div>
                   <p class="text-gray">
@@ -99,12 +109,12 @@
               <!-- Band 3 -->
               <div class="card shadow">
                 <div class="card-image">
-                  <img src="./src/3.jpg" alt="Band Mountain Heights" />
+                  <img src="./src/3.jpg" alt="Bandfoto Mountain Heights: Band vor Bergkulisse mit Akustikgitarren" />
                 </div>
                 <div class="card-content">
                   <h3>Mountain Heights</h3>
                   <div class="card-info">
-                    <img src="./src/calendar.svg" height="16" width="16" />
+                    <img src="./src/calendar.svg" height="16" width="16" alt="Kalender-Icon: Symbol für Auftrittszeit" />
                     <span>So. 19:00 • Main Stage</span>
                   </div>
                   <p class="text-gray">
@@ -115,12 +125,12 @@
               <!-- Band 4 -->
               <div class="card shadow">
                 <div class="card-image">
-                  <img src="./src/4.jpg" alt="Band Sunset Boulevard" />
+                  <img src="./src/4.jpg" alt="Bandfoto Sunset Boulevard: Pop-Rock-Band bei Sonnenuntergang auf der Bühne" />
                 </div>
                 <div class="card-content">
                   <h3>Sunset Boulevard</h3>
                   <div class="card-info">
-                    <img src="./src/calendar.svg" height="16" width="16" />
+                    <img src="./src/calendar.svg" height="16" width="16" alt="Kalender-Icon: Symbol für Auftrittszeit" />
                     <span>Fr. 18:00 • Lake Stage</span>
                   </div>
                   <p class="text-gray">
@@ -136,12 +146,12 @@
 
     <footer>
       <div class="footer-container">
-        <div class="footer-links text-gray flex justify-center">
+        <div class="footer-links text-white flex justify-center">
           <a class="footer-link" href="/impressum.html">Impressum</a>
           <a class="footer-link" href="/helfer.html">Helfer:innen</a>
         </div>
         <div>
-          <p class="text-gray-600 text-center text-sm">
+          <p class="text-white-600 text-center text-sm">
             © 2025 Rock am See Festival. Alle Rechte vorbehalten.
           </p>
         </div>

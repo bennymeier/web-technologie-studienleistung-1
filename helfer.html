@@ -20,19 +20,28 @@
       <!-- Navigation -->
       <nav class="nav">
         <div class="nav-container">
-          <ul>
+          <!-- Mobile menu toggle (checkbox hack) -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
+          <label
+            for="nav-toggle"
+            class="nav-hamburger"
+            aria-label="Menü öffnen"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </label>
+          <ul id="nav-menu" class="nav-menu">
             <li><a class="nav-link" href="index.html">Start</a></li>
             <li><a class="nav-link" href="lineup.html">Line-Up</a></li>
-            <li>
-              <a class="nav-link active" href="helfer.html">Helfer:innen</a>
-            </li>
+            <li><a class="nav-link active" href="helfer.html">Helfer:innen</a></li>
             <li><a class="nav-link" href="impressum.html">Impressum</a></li>
           </ul>
         </div>
       </nav>
 
       <header>
-        <img width="200" src="./src/logo.png" alt="Rock am See Festival-Logo" />
+        <img width="200" src="./src/logo.png" alt="Rock am See Festival-Logo: Gitarrenmotiv mit See und Sonne" />
         <h1>Helfer:innen gesucht!</h1>
       </header>
 
@@ -53,7 +62,7 @@
                   src="./src/calendar.svg"
                   width="24"
                   height="24"
-                  alt="Kalender Icon"
+                  alt="Kalender-Icon: Symbol für Festivaldatum"
                 />
                 <div class="content">
                   <h3>Festivaldaten</h3>
@@ -65,7 +74,7 @@
                   src="./src/user.svg"
                   width="24"
                   height="24"
-                  alt="Kalender Icon"
+                  alt="Benutzer-Icon: Symbol für Vorteile der Helfer:innen"
                 />
                 <div class="content">
                   <h3>Deine Vorteile</h3>
@@ -79,7 +88,7 @@
                   src="./src/info.svg"
                   width="24"
                   height="24"
-                  alt="Kalender Icon"
+                  alt="Info-Icon: Symbol für Mindestalter"
                 />
                 <div class="content">
                   <h3>Mindestalter</h3>
@@ -87,7 +96,11 @@
                 </div>
               </div>
               <!-- Formular -->
-              <form class="form" action="https://dummyjson.com/auth/login" method="POST">
+              <form
+                class="form"
+                action="https://dummyjson.com/auth/login"
+                method="POST"
+              >
                 <div class="form-group">
                   <label class="text-sm" for="username">Benutzername</label>
                   <input
@@ -120,12 +133,12 @@
 
     <footer>
       <div class="footer-container">
-        <div class="footer-links text-gray flex justify-center">
+        <div class="footer-links text-white flex justify-center">
           <a class="footer-link" href="/impressum.html">Impressum</a>
           <a class="footer-link" href="/helfer.html">Helfer:innen</a>
         </div>
         <div>
-          <p class="text-gray-600 text-center text-sm">
+          <p class="text-white-600 text-center text-sm">
             © 2025 Rock am See Festival. Alle Rechte vorbehalten.
           </p>
         </div>

@@ -10,6 +10,9 @@
 .text-white {
   color: white;
 }
+.text-white-600 {
+  color: rgb(249 250 251 / 1);
+}
 .text-yellow {
   color: rgb(250 204 21 / 1);
 }
