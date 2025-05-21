@@ -12,15 +12,17 @@
       rel="stylesheet"
     />
     <!-- Global styles -->
+    <!-- style.css enthält das Hauptlayout und das Design der Seite -->
     <link href="./src/style.css" rel="stylesheet" />
+    <!-- global.css enthält Hilfsklassen für Farben, Textgrößen und Flexbox -->
     <link href="./src/global.css" rel="stylesheet" />
   </head>
   <body>
     <div class="hero-background">
-      <!-- Navigation -->
+      <!-- Navigation: Hauptmenü für alle Seiten -->
       <nav class="nav">
         <div class="nav-container">
-          <!-- Mobile menu toggle (checkbox hack) -->
+          <!-- Mobile menu toggle (Checkbox-Hack für responsives Menü) -->
           <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
           <label
             for="nav-toggle"
@@ -32,6 +34,7 @@
             <span class="hamburger-bar"></span>
           </label>
           <ul id="nav-menu" class="nav-menu">
+            <!-- Navigation Links zu allen Seiten -->
             <li><a class="nav-link active" href="index.html">Start</a></li>
             <li><a class="nav-link" href="lineup.html">Line-Up</a></li>
             <li><a class="nav-link" href="helfer.html">Helfer:innen</a></li>
@@ -41,13 +44,15 @@
       </nav>
 
       <header>
+        <!-- Festival-Logo mit Beschreibung für Screenreader -->
         <img width="200" src="./src/logo.png" alt="Rock am See Festival-Logo: Gitarrenmotiv mit See und Sonne" />
         <h1>Rock am See - Festival 2025</h1>
       </header>
 
-      <!-- Main Content -->
+      <!-- Main Content: Hauptinhalte der Startseite -->
       <main>
         <div class="container">
+          <!-- Begrüßungstext -->
           <section class="content-box animate-fade-in">
             <p class="text-gray">
               Willkommen beim Rock am See Festival 2025! Erleben Sie drei
@@ -65,6 +70,7 @@
               des Sees.
             </p>
           </section>
+          <!-- Ticket-Info -->
           <section class="content-box animate-fade-in">
             <h2>Tickets jetzt erhältlich!</h2>
             <p class="text-gray">
@@ -74,6 +80,7 @@
             </p>
             <button class="action-btn">Tickets kaufen</button>
           </section>
+          <!-- Festival-Highlights -->
           <section class="content-box animate-fade-in">
             <h2>Festival-Highlights 2025</h2>
             <p class="text-gray">
@@ -89,6 +96,7 @@
       </main>
     </div>
 
+    <!-- Footer: Links zu Impressum und Helfer:innen -->
     <footer>
       <div class="footer-container">
         <div class="footer-links text-white flex justify-center">

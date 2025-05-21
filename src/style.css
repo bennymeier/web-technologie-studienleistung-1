@@ -1,12 +1,18 @@
-/* GENERAL */
+/*
+  style.css – Hauptstylesheet für das Rock am See Festival 2025
+  Enthält Layout, Farben, Responsive Design und Komponenten-Styles
+*/
+
+/* GENERAL – Grundlegende Stile für Schrift, Hintergrund und Layout */
 body {
   font-family: "Montserrat", sans-serif;
-  /* background-color: rgb(245, 243, 235); */
+  /* Hintergrundbild für alle Seiten, wird per ::before mit Blur angezeigt */
   margin: 0;
   padding: 0;
   position: relative;
 }
 
+/* Unscharfer Hintergrund für bessere Lesbarkeit */
 body::before {
   content: "";
   position: fixed;
@@ -84,8 +90,7 @@ p {
   min-height: 120vh;
 }
 
-/* NAVBAR */
-
+/* NAVBAR – Navigation und responsives Menü */
 .nav {
   position: sticky;
   top: 0px;
@@ -132,6 +137,7 @@ p {
 }
 
 /* --- Mobile Menu (Checkbox Hack) --- */
+/* Für kleine Bildschirme: Hamburger-Menü mit Checkbox-Hack */
 .nav-toggle {
   display: none;
 }
@@ -158,6 +164,7 @@ p {
 }
 
 @media (max-width: 599px) {
+  /* Mobile Menü sichtbar, wenn Checkbox aktiv */
   .nav-hamburger {
     display: flex;
   }
@@ -245,9 +252,6 @@ main {
 }
 
 .content-box {
-  /* max-width: 48rem; */
-  /* margin-left: auto;
-  margin-right: auto; */
   border-radius: 0.5rem;
   padding: 1.5rem;
   margin-top: 2rem;
@@ -297,7 +301,6 @@ main {
 
 .cards {
   display: grid;
-  /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1.5rem;
 }
@@ -359,9 +362,11 @@ main {
   margin-bottom: 1.5rem;
 }
 
+/* Responsive Breakpoints */
 /* Keins: x < 360px */
 /* Mobil: 360px ≤ x < 600px */
 @media (min-width: 360px) and (max-width: 599px) {
+  /* Überschriften und Abstände für kleine Bildschirme anpassen */
   h1 {
     font-size: 2rem;
   }
@@ -391,6 +396,7 @@ main {
 
 /* Desktop: 600px ≤ x */
 @media (min-width: 600px) {
+  /* Layout für große Bildschirme */
   .headliner-content {
     flex-direction: row;
   }
@@ -416,8 +422,7 @@ main {
   }
 }
 
-/* FOOTER */
-
+/* FOOTER – Fußzeile mit Links */
 footer {
   padding: 1.5rem 0;
 }
