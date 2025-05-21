@@ -360,11 +360,33 @@ main {
 }
 
 /* Keins: x < 360px */
-@media (max-width: 359px) {
-}
-
 /* Mobil: 360px ≤ x < 600px */
 @media (min-width: 360px) and (max-width: 599px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 1rem 2rem;
+  }
+  .content-box {
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+  .headliner-content {
+    gap: unset;
+  }
 }
 
 /* Desktop: 600px ≤ x */
